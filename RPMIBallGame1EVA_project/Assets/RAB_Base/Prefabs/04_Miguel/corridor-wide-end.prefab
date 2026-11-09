@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: -6602279574760301013}
   - component: {fileID: 2758436748017095556}
   - component: {fileID: 278863574934031204}
+  - component: {fileID: 6183989164304546173}
   m_Layer: 0
   m_Name: corridor-wide-end
   m_TagString: Untagged
@@ -157,6 +158,27 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 8.117241, y: 4.400535, z: 1.234478}
   m_Center: {x: 0.058620453, y: 2.2002676, z: -3.5}
+--- !u!65 &6183989164304546173
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2710014726967127038}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 8.117241, y: 0.09830465, z: 8.234478}
+  m_Center: {x: 0.058620453, y: 0.049152326, z: 0}
 --- !u!1 &3581189893189251927
 GameObject:
   m_ObjectHideFlags: 0
