@@ -1,106 +1,93 @@
 using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement; //Librería de carga/descarga de escenas
 
-public class PlayerController : MonoBehaviour
+public class PlayerInteractor : MonoBehaviour
 {
-    [Header("Movement Parameters")]
-    public float speed; //Variable que define la velocidad del player
-    public float jumpForce; //Define la fuerza de salto
-    public bool useLinearVelocity = true; //Si es verdadero, usará el movimiento físico por motor de aceleración, si no, el de fuerza de empuje
-    public bool groundCheck; //Bool que determina si el pj puede saltar o no (cuando está en el suelo puede)
+    [Header("Respawn Configuration")]
+    public Transform respawnPoint; //Ref al punto de respawn para usar su posición
+    public float respawnFallLimit = -10; //Valor negativo en eje Y a partir del cual se respawnea
 
+    [Header("Point System")]
+    public int points; //Cantidad de puntos actuales del player
+    public int winPoints = 5; //Cantidad de puntos necesarios para ganar
+    public int sceneToLoad = 2; //Número de escena a cargar cuando se consigue la victoria
 
     [Header("Reference Variables")]
-    public Rigidbody playerRb; //Almacén de referencia del rb, una vez relleno permite modificar sus variables internas
-    public Vector2 moveInput; //Almacén de los valores de pulsación de movimiento (0, 1, -1)
-    public AudioSource sfxSource; //Ref al altavoz del player, para reproducir sonidos
-    public PlayerInteractor playerInteractor; //Ref al script, permite acceder a su lista de sonidos públicos
+    public Rigidbody playerRb; //Ref al rigidbody para resetear su motor de aceleración al respawnear
 
+    [Header("SFX Configuration")]
+    public AudioClip[] sfxList; //Array de sonidos: diferentes sonidos agrupados para diferentes acciones
+    public AudioSource sfxSource; //Ref al altavoz del player: referenciarlo permite reproducir sonidos cuando queramos
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-
+        points = 0; //Cuando empieza la partida, los puntos se ponen solos en cero
     }
 
     // Update is called once per frame
     void Update()
     {
-        //Ejecuta todo lo que depende del procesador y ejecuta el input
-        //CinematicMove();
-    }
+        //Respawn por caída
+        if (transform.position.y <= respawnFallLimit)
+        {
+            Respawn();
+        }
 
-    private void FixedUpdate()
-    {
-        //FixedUpdate ejecuta todo lo que tenga que ver con el motor de físicas
-        PhysicalMove();
+        //Condición de victoria: Cuando points alcanza winpoints, cambiamos de escena
+        if (points >= winPoints)
+        {
+            ChangeScene();
+        }
     }
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.CompareTag("Ground"))
+        if (collision.gameObject.CompareTag("Obstacle"))
         {
-            groundCheck = true; //Al chocar con el suelo se devuelve la posibilidad de saltar
+            //Respawn por choque de obstáculo
+            Respawn();
         }
+
+
     }
 
-    void CinematicMove()
+    private void OnTriggerEnter(Collider other)
     {
-        //Se usa transform.Translate para moverse (dirección * velocidad)
-        transform.Translate(Vector3.forward * speed * moveInput.y * Time.deltaTime);
-        transform.Translate(Vector3.right * speed * moveInput.x * Time.deltaTime);
-    }
 
-    void PhysicalMove()
-    {
-        if (useLinearVelocity == true)
+        if (other.gameObject.CompareTag("PickUp"))
         {
-            //Tipo de movimiento por uso del motor de aceleración del rigidbody
-            //A cada eje del rigidbody se le multiplica la velocidad * input por separado
-            playerRb.linearVelocity = new Vector3(speed * moveInput.x, playerRb.linearVelocity.y, speed * moveInput.y);
+            points += 1; //Suma un punto al total de puntos actuales
+            sfxSource.PlayOneShot(sfxList[2]); //Reproducir el sonido de pick up
+            other.gameObject.SetActive(false); //Apagar el objeto con el que chocas
         }
-        else
+        if (other.gameObject.CompareTag("Switch"))
         {
-            //Tipo de movimiento por fuerza de empuje en cada eje del rigidbody
-            //A cada eje se le aplica un AddForce en la dirección concreta
-            playerRb.AddForce(Vector3.right * speed * moveInput.x);
-            playerRb.AddForce(Vector3.forward * speed * moveInput.y);
-        }
-    }
-
-    void Jump()
-    {
-        groundCheck = false; //Al saltar, se quita la posibilidad de volver a saltar hasta tocar suelo
-        playerRb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
-        //Reproducir sonido de salto: accede al player interactor y busca el sonido exacto en la lista
-        sfxSource.PlayOneShot(playerInteractor.sfxList[0]);
-    }
-
-    #region Input Methods
-    //Declaramos los métodos de input (eventos de unity)
-    //Siguen esta estructura: public void NombreAccion(referencia al contexto = botones de la acción)
-    public void OnMove(InputAction.CallbackContext context)
-    {
-        //Se rellena la variable de referencia con el valor de cualquier contexto
-        moveInput = context.ReadValue<Vector2>();
-    }
-
-    public void OnJump(InputAction.CallbackContext context)
-    {
-        if (context.performed)
-        {
-            //Si aprieto el botón...
-            //Y si estoy en el suelo...
-            if (groundCheck == true)
-            {
-                Jump();
-            }
-
+            sfxSource.PlayOneShot(sfxList[3]); //Reproducir el sonido asociado al switch
         }
 
     }
 
-    #endregion
+    void Respawn()
+    {
+        //1- Cambia la posición del player por la del punto de respawn
+        transform.position = respawnPoint.position;
+        //2- Resetea la velocidad del Rigidbody para evitar acumulaciones de aceleración
+        playerRb.linearVelocity = new Vector3(0, 0, 0);
+        //3- Resetea la velocidad de rotación
+        playerRb.angularVelocity = new Vector3(0, 0, 0);
+        //4- Reproducir el sonido de respawn desde el audiosource del player
+        sfxSource.PlayOneShot(sfxList[1]);
+    }
+
+    void ChangeScene()
+    {
+        //Acción que al ejecutarse carga la escena asignada a la variable sceneToLoad
+        SceneManager.LoadScene(sceneToLoad);
+    }
+
+
+
 }

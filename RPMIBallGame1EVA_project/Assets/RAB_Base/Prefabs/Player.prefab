@@ -12,12 +12,10 @@ GameObject:
   - component: {fileID: 4985655903365381991}
   - component: {fileID: 2185352693786825686}
   - component: {fileID: 1096384788149151137}
-  - component: {fileID: 5283741305484919455}
-  - component: {fileID: 8242687023277155814}
   - component: {fileID: 4961796001348947218}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -115,46 +113,6 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &5283741305484919455
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6746952416548305361}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c1f28e580eab4ec4ea6242163d15fa6b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlayerController
-  speed: 8
-  jumpForce: 6
-  isCinematic: 0
-  useLinearVelocity: 0
-  isGrounded: 0
-  PlayerRb: {fileID: 4961796001348947218}
-  sfxPlayer: {fileID: 0}
-  playerInteractor: {fileID: 8242687023277155814}
---- !u!114 &8242687023277155814
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6746952416548305361}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1e2b8c54eb07974459e492e8ba853794, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlayerInteractor
-  respawnPoint: {fileID: 0}
-  respawnFalLimit: -10
-  point: 0
-  winPoints: 10
-  sceneToLoad: 2
-  playerRb: {fileID: 4961796001348947218}
-  sfxList: []
-  sfxPlayer: {fileID: 0}
 --- !u!54 &4961796001348947218
 Rigidbody:
   m_ObjectHideFlags: 0
