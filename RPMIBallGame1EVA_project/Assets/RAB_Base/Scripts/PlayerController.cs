@@ -5,119 +5,102 @@ using UnityEngine.InputSystem;
 public class PlayerController : MonoBehaviour
 {
     [Header("Movement Parameters")]
-    public float speed = 8f;
-    public float jumpForce = 6f;
-    public bool isCinematic; //si es verdadero usa mov. cenematico, si no, usa el fisico
-    public bool useLinearVelocity; //si es verdadero: mov fisico por motor de acereracion, si no, por empije
-    public bool isGrounded; //bool que determina si se puede saltar o no
+    public float speed; //Variable que define la velocidad del player
+    public float jumpForce; //Define la fuerza de salto
+    public bool useLinearVelocity = true; //Si es verdadero, usará el movimiento físico por motor de aceleración, si no, el de fuerza de empuje
+    public bool groundCheck; //Bool que determina si el pj puede saltar o no (cuando está en el suelo puede)
+
 
     [Header("Reference Variables")]
+    public Rigidbody playerRb; //Almacén de referencia del rb, una vez relleno permite modificar sus variables internas
+    public Vector2 moveInput; //Almacén de los valores de pulsación de movimiento (0, 1, -1)
+    public AudioSource sfxSource; //Ref al altavoz del player, para reproducir sonidos
+    public PlayerInteractor playerInteractor; //Ref al script, permite acceder a su lista de sonidos públicos
 
-    public Rigidbody PlayerRb; //Almacen del rb del jugador, permite moverlo por fisicas
 
-    private Vector2 moveInput; // Almacen de 0/1 valor de los botones de movimiento
-
-    public AudioSource sfxPlayer; //Ref al reploductor del sonidos del player
-    public PlayerInteractor playerInteractor; //Ref al scrip que tiene la lista de sonidos
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        isGrounded = true; //al inicio del juego activo la posibilidad de salto
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        //en el update
-        if (isCinematic == true)
-        {
-            CinematicMove();
-        }
-        else
-        {
-            PhysicalMove();
-        }
-        
+        //Ejecuta todo lo que depende del procesador y ejecuta el input
+        //CinematicMove();
     }
-     void FixedUpdate()
+
+    private void FixedUpdate()
     {
-        //en el fixedUpdte se llama a todo lo que tiene que ver con fisicas
-        if (isCinematic == false)
-        {
-            PhysicalMove();
-        }
+        //FixedUpdate ejecuta todo lo que tenga que ver con el motor de físicas
+        PhysicalMove();
     }
 
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("Ground"))
         {
-            //se devuelve la posibilidad de saltar (estar en el suelo)
-            isGrounded = true;
+            groundCheck = true; //Al chocar con el suelo se devuelve la posibilidad de saltar
         }
     }
+
     void CinematicMove()
     {
-        // movimieno cinematico: consiste en multiplicar un eje position de transform por la velocidad
-        // Eje potision: X (izquierda, derecha), Y (arriba, abajo), Z (alfrente, atras)
-        // el movimiento cinematico siempre se multiplica por Time.deltaTime para normalizar
-        transform.Translate(Vector3.forward * speed *moveInput.y* Time.deltaTime);
-        transform.Translate(Vector3.right * speed *moveInput.x* Time.deltaTime);
+        //Se usa transform.Translate para moverse (dirección * velocidad)
+        transform.Translate(Vector3.forward * speed * moveInput.y * Time.deltaTime);
+        transform.Translate(Vector3.right * speed * moveInput.x * Time.deltaTime);
     }
 
     void PhysicalMove()
     {
-        //dos modos de movimiento fisico
         if (useLinearVelocity == true)
         {
-            //1- cambiar la velocidad de cada eje del velocity del RigyBody
-            PlayerRb.linearVelocity = new Vector3(moveInput.x * speed, PlayerRb.linearVelocity.y, moveInput.y * speed);
+            //Tipo de movimiento por uso del motor de aceleración del rigidbody
+            //A cada eje del rigidbody se le multiplica la velocidad * input por separado
+            playerRb.linearVelocity = new Vector3(speed * moveInput.x, playerRb.linearVelocity.y, speed * moveInput.y);
         }
         else
         {
-            //2- aplicar una fuerza de empuje en cada uno de los ejes deseades(movimiento con inercia) si no se pone modo se pone automatico en fuerza
-            PlayerRb.AddForce(Vector3.forward * speed * moveInput.y); //fuerza delante/atras
-            PlayerRb.AddForce(Vector3.right * speed * moveInput.x); //fuerza derecha/izquierda
+            //Tipo de movimiento por fuerza de empuje en cada eje del rigidbody
+            //A cada eje se le aplica un AddForce en la dirección concreta
+            playerRb.AddForce(Vector3.right * speed * moveInput.x);
+            playerRb.AddForce(Vector3.forward * speed * moveInput.y);
         }
-       
     }
 
     void Jump()
     {
-        if (isGrounded == true)
-        {
-            // salto = RigyBody . addForce(direccion * velocidad, modo de fuerza)
-            PlayerRb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
-            //quitar la posibilidad de saltar hasta tocar el suelo de nuevo
-            isGrounded = false;
-            //reproduce el sonido de salto accediendo a la lista del player interactor
-            sfxPlayer.PlayOneShot(playerInteractor.sfxList[2]);
-        }
-        
+        groundCheck = false; //Al saltar, se quita la posibilidad de volver a saltar hasta tocar suelo
+        playerRb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
+        //Reproducir sonido de salto: accede al player interactor y busca el sonido exacto en la lista
+        sfxSource.PlayOneShot(playerInteractor.sfxList[0]);
     }
 
-
-
-
-    #region ImputMetodos
-    // Metodos de imput: siempre es public void NombreImput (contexto = cualquier boton asociado a la accion)
+    #region Input Methods
+    //Declaramos los métodos de input (eventos de unity)
+    //Siguen esta estructura: public void NombreAccion(referencia al contexto = botones de la acción)
     public void OnMove(InputAction.CallbackContext context)
     {
-        moveInput = context . ReadValue<Vector2>();
+        //Se rellena la variable de referencia con el valor de cualquier contexto
+        moveInput = context.ReadValue<Vector2>();
     }
 
     public void OnJump(InputAction.CallbackContext context)
     {
-        //sino se declara estado del boron hace la accion 3 veses ( started, perfoment, cancelled)
-        //para usar un estado determinado se usa condicional if
         if (context.performed)
         {
-            //si se a usado el botton
-            Jump();
+            //Si aprieto el botón...
+            //Y si estoy en el suelo...
+            if (groundCheck == true)
+            {
+                Jump();
+            }
+
         }
+
     }
 
     #endregion
-
 }
