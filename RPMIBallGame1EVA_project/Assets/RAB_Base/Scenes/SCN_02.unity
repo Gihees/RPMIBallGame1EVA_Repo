@@ -12170,7 +12170,7 @@ GameObject:
   - component: {fileID: 824141167}
   - component: {fileID: 824141166}
   m_Layer: 0
-  m_Name: PELOTA DE PREUBA
+  m_Name: PELOTA DE PRUEBA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
