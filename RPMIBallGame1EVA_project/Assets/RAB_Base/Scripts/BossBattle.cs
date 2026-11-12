@@ -5,35 +5,36 @@ using UnityEngine;
 public class BossBattle : MonoBehaviour
 {
     [Header("Ataque 1 - Lava")]
-    [SerializeField] public Transform lava;
-    [SerializeField] public float lavaRiseHeight = 3f;
-    [SerializeField] public float lavaRiseTime = 1f;
-    [SerializeField] public float lavaStayTime = 1.5f;
+    [SerializeField] private Transform lava;
+    [SerializeField] private float lavaRiseHeight = 3f;
+    [SerializeField] private float lavaRiseTime = 1f;
+    [SerializeField] private float lavaStayTime = 1.5f;
 
     [Header("Ataque 2 - Barrido lateral")]
-    [SerializeField] public Transform sweeper;
-    [SerializeField] public float leftX = -10f;
-    [SerializeField] public float rightX = 10f;
-    [SerializeField] public float sweepDuration = 2f;
+    [SerializeField] private Transform sweeper;
+    [SerializeField] private float leftX = -10f;
+    [SerializeField] private float rightX = 10f;
+    [SerializeField] private float sweepDuration = 2f;
 
     [Header("Ataque 3 - Pilar que desactiva objetos")]
-    [SerializeField] public Transform pillar;
-    [SerializeField] public float pillarRiseHeight = 3f;
-    [SerializeField] public float pillarRiseTime = 0.8f;
-    [SerializeField] public float pillarStayTime = 1f;
-    [SerializeField] public GameObject[] objectsToDisable;
-    [SerializeField] public int pillarHitsToFinish = 2;
+    [SerializeField] private Transform pillar;
+    [SerializeField] private float pillarRiseHeight = 3f;
+    [SerializeField] private float pillarRiseTime = 0.8f;
+    [SerializeField] private float pillarStayTime = 1f;
+    [SerializeField] private GameObject[] objectsToDisable;
+    [SerializeField] private GameObject[] objectsToEnable;
+    [SerializeField] private int pillarHitsToFinish = 2;
 
     [Header("General")]
-    [SerializeField] public float timeBetweenAttacks = 2f;
-    [SerializeField] public float winDelay = 5f;
-    [SerializeField] public GameObject winTrigger;
+    [SerializeField] private float timeBetweenAttacks = 2f;
+    [SerializeField] private float winDelay = 5f;
+    [SerializeField] private GameObject winTrigger;
 
-    public Vector3 lavaStartPos;
-    public Vector3 pillarStartPos;
-    public int pillarHits = 0;
+    private Vector3 lavaStartPos;
+    private Vector3 pillarStartPos;
+    private int pillarHits = 0;
 
-    public void Start()
+    private void Start()
     {
         lavaStartPos = lava.position;
         pillarStartPos = pillar.position;
@@ -44,7 +45,7 @@ public class BossBattle : MonoBehaviour
         StartCoroutine(BossLoop());
     }
 
-    public IEnumerator BossLoop()
+    private IEnumerator BossLoop()
     {
         yield return new WaitForSeconds(timeBetweenAttacks);
 
@@ -72,14 +73,14 @@ public class BossBattle : MonoBehaviour
         }
     }
 
-    public IEnumerator LavaAttack()
+    private IEnumerator LavaAttack()
     {
         yield return MoveTo(lava, lavaStartPos + Vector3.up * lavaRiseHeight, lavaRiseTime);
         yield return new WaitForSeconds(lavaStayTime);
         yield return MoveTo(lava, lavaStartPos, lavaRiseTime);
     }
 
-    public IEnumerator SweepAttack()
+    private IEnumerator SweepAttack()
     {
         bool fromLeft = Random.value > 0.5f;
         float startX = fromLeft ? leftX : rightX;
@@ -96,13 +97,18 @@ public class BossBattle : MonoBehaviour
         sweeper.gameObject.SetActive(false);
     }
 
-    public IEnumerator PillarAttack()
+    private IEnumerator PillarAttack()
     {
         yield return MoveTo(pillar, pillarStartPos + Vector3.up * pillarRiseHeight, pillarRiseTime);
 
         if (pillarHits < objectsToDisable.Length)
         {
             objectsToDisable[pillarHits].SetActive(false);
+        }
+
+        if (pillarHits < objectsToEnable.Length)
+        {
+            objectsToEnable[pillarHits].SetActive(true);
         }
 
         pillarHits++;
@@ -116,13 +122,13 @@ public class BossBattle : MonoBehaviour
         yield return MoveTo(pillar, pillarStartPos, pillarRiseTime);
     }
 
-    public IEnumerator WinRoutine()
+    private IEnumerator WinRoutine()
     {
         yield return new WaitForSeconds(winDelay);
         winTrigger.SetActive(true);
     }
 
-    public IEnumerator MoveTo(Transform target, Vector3 destination, float duration)
+    private IEnumerator MoveTo(Transform target, Vector3 destination, float duration)
     {
         Vector3 origin = target.position;
         float elapsed = 0f;

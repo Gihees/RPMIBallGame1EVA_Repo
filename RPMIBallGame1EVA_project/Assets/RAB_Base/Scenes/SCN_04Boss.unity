@@ -586,6 +586,11 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 4, y: 4.05, z: 2.454492}
   m_Center: {x: 0, y: 2.025, z: 0}
+--- !u!1 &128597975 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1984429135326107287, guid: f034aa3fc4d94184e80104978810990f, type: 3}
+  m_PrefabInstance: {fileID: 1279069191}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &134411109
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3064,7 +3069,7 @@ Transform:
   m_GameObject: {fileID: 779805917}
   serializedVersion: 2
   m_LocalRotation: {x: 0.38268322, y: -0, z: -0, w: 0.9238797}
-  m_LocalPosition: {x: 0, y: 16.828428, z: -7.171574}
+  m_LocalPosition: {x: 0, y: 28.22, z: -18.57}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3772,7 +3777,7 @@ GameObject:
   - component: {fileID: 986181672}
   m_Layer: 0
   m_Name: ataque huesos rompe Pl
-  m_TagString: Untagged
+  m_TagString: Obstacles
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5634,6 +5639,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1207469806672677933, guid: f034aa3fc4d94184e80104978810990f, type: 3}
   m_PrefabInstance: {fileID: 1279069191}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1302021873 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1984429135326107287, guid: f034aa3fc4d94184e80104978810990f, type: 3}
+  m_PrefabInstance: {fileID: 6534817757151791235}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1302849366
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6800,7 +6810,7 @@ GameObject:
   - component: {fileID: 1552457187}
   m_Layer: 0
   m_Name: lava
-  m_TagString: Untagged
+  m_TagString: Obstacles
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6909,7 +6919,7 @@ GameObject:
   - component: {fileID: 1610870259}
   m_Layer: 0
   m_Name: ataque huesos lado
-  m_TagString: Untagged
+  m_TagString: Obstacles
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8038,27 +8048,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BossBattle
   lava: {fileID: 1552457186}
-  lavaRiseHeight: 3
+  lavaRiseHeight: 4
   lavaRiseTime: 1
   lavaStayTime: 1.5
   sweeper: {fileID: 1610870259}
-  leftX: -10
-  rightX: 10
+  leftX: -60
+  rightX: -120
   sweepDuration: 2
   pillar: {fileID: 986181672}
-  pillarRiseHeight: 3
+  pillarRiseHeight: 6
   pillarRiseTime: 0.8
   pillarStayTime: 1
   objectsToDisable:
-  - {fileID: 1488003884}
   - {fileID: 702553280}
+  - {fileID: 1488003884}
+  objectsToEnable:
+  - {fileID: 128597975}
+  - {fileID: 1302021873}
   pillarHitsToFinish: 2
-  timeBetweenAttacks: 2
-  winDelay: 5
+  timeBetweenAttacks: 3
+  winDelay: 10
   winTrigger: {fileID: 248423088}
-  lavaStartPos: {x: 0, y: 0, z: 0}
-  pillarStartPos: {x: 0, y: 0, z: 0}
-  pillarHits: 0
 --- !u!1001 &1910791018
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8522,7 +8532,7 @@ GameObject:
   - component: {fileID: 2004038687}
   m_Layer: 0
   m_Name: ataquesBoss
-  m_TagString: Untagged
+  m_TagString: Obstacles
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8976,6 +8986,14 @@ PrefabInstance:
       propertyPath: playerRb
       value: 
       objectReference: {fileID: 2122960994}
+    - target: {fileID: -1722817207976430740, guid: 14590dc2edc4f384d86a1b08a31d5ec1, type: 3}
+      propertyPath: moveInput.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -1722817207976430740, guid: 14590dc2edc4f384d86a1b08a31d5ec1, type: 3}
+      propertyPath: moveInput.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: -1722817207976430740, guid: 14590dc2edc4f384d86a1b08a31d5ec1, type: 3}
       propertyPath: playerInteractor
       value: 
