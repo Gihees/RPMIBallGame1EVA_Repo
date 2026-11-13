@@ -28,6 +28,22 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        moveInput.x = Input.GetAxis("Horizontal");
+        moveInput.y = Input.GetAxis("Vertical");
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            Jump();
+        }
+        //en el update
+        if (isCinematic == true)
+        {
+            CinematicMove();
+        }
+        else
+        {
+            PhysicalMove();
+        }
+        
         //Ejecuta todo lo que depende del procesador y ejecuta el input
         //CinematicMove();
     }
