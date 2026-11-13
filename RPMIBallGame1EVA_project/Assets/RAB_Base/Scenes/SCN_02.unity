@@ -10472,10 +10472,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tumba cerrada
       objectReference: {fileID: 0}
+    - target: {fileID: 714088295541823732, guid: 96bf068480d9e29408bf79d403528a2c, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 714088295541823732, guid: 96bf068480d9e29408bf79d403528a2c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 812154388}
+    - targetCorrespondingSourceObject: {fileID: 714088295541823732, guid: 96bf068480d9e29408bf79d403528a2c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 812154387}
   m_SourcePrefab: {fileID: 100100000, guid: 96bf068480d9e29408bf79d403528a2c, type: 3}
 --- !u!4 &555489860 stripped
 Transform:
@@ -13859,15 +13869,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 10747d921817c6c4d9ae3b36530556a7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -48.416275
+      value: -48.47
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 10747d921817c6c4d9ae3b36530556a7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.97
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 10747d921817c6c4d9ae3b36530556a7, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 33.49488
+      value: 33.99
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 10747d921817c6c4d9ae3b36530556a7, type: 3}
       propertyPath: m_LocalRotation.w
@@ -15547,6 +15557,50 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4045318573261476256, guid: baa8bc5c8b87d76479bd7b2b90f7ce28, type: 3}
   m_PrefabInstance: {fileID: 806022161}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &812154383 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 714088295541823732, guid: 96bf068480d9e29408bf79d403528a2c, type: 3}
+  m_PrefabInstance: {fileID: 555489859}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &812154387
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 812154383}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4acddc0f2933b504891f016217c020e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Palanca
+  controlObject: {fileID: 968381087}
+  objectsToDisable:
+  - {fileID: 812154383}
+  objectsToEnable:
+  - {fileID: 1756698707}
+  onlyOnce: 1
+--- !u!65 &812154388
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 812154383}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.2300327, y: 0.42652258, z: 1.868988}
+  m_Center: {x: 0.030503236, y: 0.21326129, z: -0.09210555}
 --- !u!1001 &817916768
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -35267,6 +35321,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6416994552820731616, guid: 385eb7c92f33c2d4aaedfd246acab699, type: 3}
   m_PrefabInstance: {fileID: 1753743223}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1756698707 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 10747d921817c6c4d9ae3b36530556a7, type: 3}
+  m_PrefabInstance: {fileID: 724046650}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1757903894
 GameObject:
   m_ObjectHideFlags: 0
@@ -43437,6 +43496,10 @@ PrefabInstance:
     - target: {fileID: 293492701670161998, guid: 87ab52714f2cf0543bfafe1f022da016, type: 3}
       propertyPath: m_Name
       value: shovel
+      objectReference: {fileID: 0}
+    - target: {fileID: 293492701670161998, guid: 87ab52714f2cf0543bfafe1f022da016, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 293492701670161998, guid: 87ab52714f2cf0543bfafe1f022da016, type: 3}
       propertyPath: m_TagString
