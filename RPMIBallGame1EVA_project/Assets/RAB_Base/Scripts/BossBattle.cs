@@ -9,24 +9,29 @@ public class BossBattle : MonoBehaviour
     [SerializeField] private float lavaRiseHeight = 3f;
     [SerializeField] private float lavaRiseTime = 1f;
     [SerializeField] private float lavaStayTime = 1.5f;
+    [SerializeField] private GameObject lavaWarning;
 
     [Header("Ataque 2 - Barrido lateral")]
     [SerializeField] private Transform sweeper;
     [SerializeField] private float leftX = -10f;
     [SerializeField] private float rightX = 10f;
     [SerializeField] private float sweepDuration = 2f;
+    [SerializeField] private GameObject sweepWarningLeft;
+    [SerializeField] private GameObject sweepWarningRight;
 
     [Header("Ataque 3 - Pilar que desactiva objetos")]
     [SerializeField] private Transform pillar;
     [SerializeField] private float pillarRiseHeight = 3f;
     [SerializeField] private float pillarRiseTime = 0.8f;
     [SerializeField] private float pillarStayTime = 1f;
+    [SerializeField] private GameObject pillarWarning;
     [SerializeField] private GameObject[] objectsToDisable;
     [SerializeField] private GameObject[] objectsToEnable;
     [SerializeField] private int pillarHitsToFinish = 2;
 
     [Header("General")]
     [SerializeField] private float timeBetweenAttacks = 2f;
+    [SerializeField] private float warningTime = 1.5f;
     [SerializeField] private float winDelay = 5f;
     [SerializeField] private GameObject winTrigger;
 
@@ -41,6 +46,11 @@ public class BossBattle : MonoBehaviour
 
         sweeper.gameObject.SetActive(false);
         winTrigger.SetActive(false);
+
+        lavaWarning.SetActive(false);
+        sweepWarningLeft.SetActive(false);
+        sweepWarningRight.SetActive(false);
+        pillarWarning.SetActive(false);
 
         StartCoroutine(BossLoop());
     }
@@ -75,9 +85,14 @@ public class BossBattle : MonoBehaviour
 
     private IEnumerator LavaAttack()
     {
+        lavaWarning.SetActive(true);
+        yield return new WaitForSeconds(warningTime);
+
         yield return MoveTo(lava, lavaStartPos + Vector3.up * lavaRiseHeight, lavaRiseTime);
         yield return new WaitForSeconds(lavaStayTime);
         yield return MoveTo(lava, lavaStartPos, lavaRiseTime);
+
+        lavaWarning.SetActive(false);
     }
 
     private IEnumerator SweepAttack()
@@ -89,16 +104,24 @@ public class BossBattle : MonoBehaviour
         Vector3 startPos = new Vector3(startX, sweeper.position.y, sweeper.position.z);
         Vector3 endPos = new Vector3(endX, sweeper.position.y, sweeper.position.z);
 
+        GameObject warning = fromLeft ? sweepWarningLeft : sweepWarningRight;
+        warning.SetActive(true);
+        yield return new WaitForSeconds(warningTime);
+
         sweeper.position = startPos;
         sweeper.gameObject.SetActive(true);
 
         yield return MoveTo(sweeper, endPos, sweepDuration);
 
         sweeper.gameObject.SetActive(false);
+        warning.SetActive(false);
     }
 
     private IEnumerator PillarAttack()
     {
+        pillarWarning.SetActive(true);
+        yield return new WaitForSeconds(warningTime);
+
         yield return MoveTo(pillar, pillarStartPos + Vector3.up * pillarRiseHeight, pillarRiseTime);
 
         if (pillarHits < objectsToDisable.Length)
@@ -120,6 +143,8 @@ public class BossBattle : MonoBehaviour
 
         yield return new WaitForSeconds(pillarStayTime);
         yield return MoveTo(pillar, pillarStartPos, pillarRiseTime);
+
+        pillarWarning.SetActive(false);
     }
 
     private IEnumerator WinRoutine()
