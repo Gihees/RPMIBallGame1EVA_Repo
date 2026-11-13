@@ -50,10 +50,6 @@ public class PlayerController : MonoBehaviour
         {
             //cargar escena # referenciando al scene management 
         }
-        if (collision.gameObject.CompareTag("Enemy"))
-        {
-            //cargar escena # referanciando al scene management
-        }
 
     }
 
@@ -76,6 +72,7 @@ public class PlayerController : MonoBehaviour
     void Respawn()
     {
         transform.position = respawnPoint.position;
+        playerRb.linearVelocity = new Vector3(0, 0, 0);
     }
 
     #region Input Methods
