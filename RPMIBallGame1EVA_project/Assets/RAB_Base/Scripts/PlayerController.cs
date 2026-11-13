@@ -1,3 +1,4 @@
+using System.Runtime.InteropServices;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -26,7 +27,6 @@ public class PlayerController : MonoBehaviour
         isGrounded = true; //al inicio del juego activo la posibilidad de salto
     }
 
-    // Update is called once per frame
     void Update()
     {
         moveInput.x = Input.GetAxis("Horizontal");
@@ -35,25 +35,16 @@ public class PlayerController : MonoBehaviour
         {
             Jump();
         }
-        //en el update
-        if (isCinematic == true)
+    }
+        private void FixedUpdate()
+    { 
+        
         {
-            CinematicMove();
-        }
-        else
-        {
-            PhysicalMove();
-        }
+        PhysicalMove();
 
-    }
-    void FixedUpdate()
-    {
-        //en el fixedUpdte se llama a todo lo que tiene que ver con fisicas
-        if (isCinematic == false)
-        {
-            PhysicalMove();
         }
     }
+   
 
     private void OnCollisionEnter(Collision collision)
     {
