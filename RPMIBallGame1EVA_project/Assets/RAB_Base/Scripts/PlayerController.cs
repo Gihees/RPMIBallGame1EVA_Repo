@@ -8,12 +8,16 @@ public class PlayerController : MonoBehaviour
     public Rigidbody playerRb;
 
     [Header("Movement Parameters")]
-    public float speed = 10f;
+    public float speed = 10;
     public Vector2 moveInput;
 
     [Header("Jump parameters")]
-    public float jumpForce = 6f;
+    public float jumpForce = 6;
     public bool isGrounded = true;
+
+    [Header("Respawn Sistem")]
+    public float fallLimit = -10;
+    public Transform respawnPoint;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -25,6 +29,32 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         CinematicMovement();
+        if (transform.position.y <= fallLimit)
+        {
+            Respawn();
+        }
+    }
+
+    private void FixedUpdate()
+    {
+        
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Ground"))
+        {
+            isGrounded = true;
+        }
+        if (collision.gameObject.CompareTag("Obstacle"))
+        {
+            //cargar escena # referenciando al scene management 
+        }
+        if (collision.gameObject.CompareTag("Enemy"))
+        {
+            //cargar escena # referanciando al scene management
+        }
+
     }
 
     void CinematicMovement()
@@ -41,6 +71,11 @@ public class PlayerController : MonoBehaviour
     void Jump()
     {
         playerRb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
+    }
+
+    void Respawn()
+    {
+        transform.position = respawnPoint.position;
     }
 
     #region Input Methods
