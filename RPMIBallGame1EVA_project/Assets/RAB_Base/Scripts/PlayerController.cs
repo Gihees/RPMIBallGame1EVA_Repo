@@ -24,12 +24,13 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        CinematicMovement();
     }
 
     void CinematicMovement()
     {
-
+        transform.Translate(Vector3.right * speed * moveInput.x*Time.deltaTime);
+        transform.Translate(Vector3.forward * speed * moveInput.y * Time.deltaTime);
     }
 
     void PhysicalMovement()
@@ -39,7 +40,7 @@ public class PlayerController : MonoBehaviour
 
     void Jump()
     {
-
+        playerRb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
     }
 
     #region Input Methods
