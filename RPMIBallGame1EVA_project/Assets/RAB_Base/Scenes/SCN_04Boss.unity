@@ -2909,7 +2909,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &767209112
 Transform:
   m_ObjectHideFlags: 0
@@ -5410,7 +5410,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1226749425
 Transform:
   m_ObjectHideFlags: 0
@@ -6285,7 +6285,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1396013055
 Transform:
   m_ObjectHideFlags: 0
@@ -8051,14 +8051,18 @@ MonoBehaviour:
   lavaRiseHeight: 4
   lavaRiseTime: 1
   lavaStayTime: 1.5
+  lavaWarning: {fileID: 1983688974}
   sweeper: {fileID: 1610870259}
   leftX: -60
   rightX: -120
   sweepDuration: 2
+  sweepWarningLeft: {fileID: 1244740749}
+  sweepWarningRight: {fileID: 847766108}
   pillar: {fileID: 986181672}
   pillarRiseHeight: 6
   pillarRiseTime: 0.8
   pillarStayTime: 1
+  pillarWarning: {fileID: 1396013054}
   objectsToDisable:
   - {fileID: 702553280}
   - {fileID: 1488003884}
@@ -8067,6 +8071,7 @@ MonoBehaviour:
   - {fileID: 1302021873}
   pillarHitsToFinish: 2
   timeBetweenAttacks: 3
+  warningTime: 1.5
   winDelay: 10
   winTrigger: {fileID: 248423088}
 --- !u!1001 &1910791018
