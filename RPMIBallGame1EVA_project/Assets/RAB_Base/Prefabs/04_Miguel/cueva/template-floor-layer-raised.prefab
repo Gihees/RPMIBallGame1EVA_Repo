@@ -83,6 +83,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: template-floor-layer-raised
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ed95ef3a20f76d04a8e53de3800b7f4d, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:

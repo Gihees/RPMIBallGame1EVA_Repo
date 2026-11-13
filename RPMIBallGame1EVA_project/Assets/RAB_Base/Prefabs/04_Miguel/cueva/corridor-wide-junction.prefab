@@ -83,6 +83,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: corridor-wide-junction
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5f46a8ddd69026348825b69a9a77e17a, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
