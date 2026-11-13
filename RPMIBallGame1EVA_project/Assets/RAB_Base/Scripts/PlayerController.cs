@@ -35,14 +35,7 @@ public class PlayerController : MonoBehaviour
             Jump();
         }
         //en el update
-        if (isCinematic == true)
-        {
-            CinematicMove();
-        }
-        else
-        {
-            PhysicalMove();
-        }
+        
         
         //Ejecuta todo lo que depende del procesador y ejecuta el input
         //CinematicMove();
