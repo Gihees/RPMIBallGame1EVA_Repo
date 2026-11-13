@@ -93,7 +93,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 5ab79682eb153e74e9f96146a3ff94b9, type: 3}
       propertyPath: m_Name
-      value: vela
+      value: Vela
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -105,6 +105,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 5ab79682eb153e74e9f96146a3ff94b9, type: 3}
       insertIndex: -1
       addedObject: {fileID: 6782785076260330678}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 5ab79682eb153e74e9f96146a3ff94b9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -4640013348813991273}
   m_SourcePrefab: {fileID: 100100000, guid: 5ab79682eb153e74e9f96146a3ff94b9, type: 3}
 --- !u!1 &277512768026437424 stripped
 GameObject:
@@ -132,6 +135,21 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.2779222, y: 0.8393434, z: 0.27792215}
   m_Center: {x: -0.000000007450581, y: 0.4196717, z: 0.00000017136335}
+--- !u!114 &-4640013348813991273
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 277512768026437424}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14beb3f2a428d5449b4bd333badadd67, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PickUp
+  rotSpeedX: 5
+  rotSpeedY: 90
+  rotSpeedZ: 5
 --- !u!4 &617622932829093258 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 5ab79682eb153e74e9f96146a3ff94b9, type: 3}
