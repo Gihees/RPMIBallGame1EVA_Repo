@@ -33360,7 +33360,7 @@ GameObject:
   - component: {fileID: 1637991600}
   - component: {fileID: 1637991599}
   m_Layer: 0
-  m_Name: PlayerCamdenuevo
+  m_Name: PlayerCam
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -44956,6 +44956,7 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 1233740439}
+  - {fileID: 1637991604}
   - {fileID: 1795742814}
   - {fileID: 2029391345}
   - {fileID: 911749611}
@@ -44975,4 +44976,3 @@ SceneRoots:
   - {fileID: 756938600}
   - {fileID: 1258777275}
   - {fileID: 1226121883}
-  - {fileID: 1637991604}
