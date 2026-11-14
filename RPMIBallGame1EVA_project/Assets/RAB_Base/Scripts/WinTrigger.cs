@@ -1,15 +1,16 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class WinTrigger : MonoBehaviour
+public class WinTrigger: MonoBehaviour
 {
-    [SerializeField] public string winSceneName = "Win";
+    [Header("Scene Management")]
+    public int sceneToLoad = 4;
 
     public void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
-            SceneManager.LoadScene(winSceneName);
+            SceneManager.LoadScene(sceneToLoad);
         }
     }
 }
