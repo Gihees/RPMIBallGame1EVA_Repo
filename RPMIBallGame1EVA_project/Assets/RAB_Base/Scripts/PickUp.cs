@@ -12,4 +12,11 @@ public class PickUp : MonoBehaviour
         // Gira continuamente sobre sus propios ejes locales (Space.Self)
         transform.Rotate(new Vector3(rotSpeedX, rotSpeedY, rotSpeedZ) * Time.deltaTime, Space.Self);
     }
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            gameObject.SetActive(false);
+        }
+    }
 }
