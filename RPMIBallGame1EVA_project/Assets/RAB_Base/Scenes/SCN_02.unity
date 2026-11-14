@@ -127,6 +127,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 501453028}
     m_Modifications:
+    - target: {fileID: 1181138644417381151, guid: 385eb7c92f33c2d4aaedfd246acab699, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5928547045694461018, guid: 385eb7c92f33c2d4aaedfd246acab699, type: 3}
       propertyPath: m_Name
       value: Verja-06 (2)
@@ -330,6 +334,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 501453028}
     m_Modifications:
+    - target: {fileID: 1181138644417381151, guid: 385eb7c92f33c2d4aaedfd246acab699, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5928547045694461018, guid: 385eb7c92f33c2d4aaedfd246acab699, type: 3}
       propertyPath: m_Name
       value: Verja-04 (2)
@@ -418,7 +426,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6398112473083880224, guid: 74707ab9aa06950449e470fbd1b13fa4, type: 3}
       propertyPath: m_Name
-      value: Cripta de la pala
+      value: OldCrypt
       objectReference: {fileID: 0}
     - target: {fileID: 6399093721978942062, guid: 74707ab9aa06950449e470fbd1b13fa4, type: 3}
       propertyPath: m_IsTrigger
@@ -1194,7 +1202,7 @@ GameObject:
   m_Component:
   - component: {fileID: 45881215}
   m_Layer: 0
-  m_Name: "Verjas met\xE1licas"
+  m_Name: InteriorFences
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1608,6 +1616,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4045318573261476256, guid: baa8bc5c8b87d76479bd7b2b90f7ce28, type: 3}
   m_PrefabInstance: {fileID: 75815573}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &77894080 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: f57fafc29b24f994eb47085a29ea5442, type: 3}
+  m_PrefabInstance: {fileID: 1197433956}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &81562373
 GameObject:
   m_ObjectHideFlags: 0
@@ -1996,6 +2009,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 501453028}
     m_Modifications:
+    - target: {fileID: 1181138644417381151, guid: 385eb7c92f33c2d4aaedfd246acab699, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5928547045694461018, guid: 385eb7c92f33c2d4aaedfd246acab699, type: 3}
       propertyPath: m_Name
       value: Verja-05 (3)
@@ -2258,7 +2275,7 @@ GameObject:
   m_Component:
   - component: {fileID: 104876037}
   m_Layer: 0
-  m_Name: Criptas decorativas
+  m_Name: Crypts
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2294,6 +2311,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 501453028}
     m_Modifications:
+    - target: {fileID: 1181138644417381151, guid: 385eb7c92f33c2d4aaedfd246acab699, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5928547045694461018, guid: 385eb7c92f33c2d4aaedfd246acab699, type: 3}
       propertyPath: m_Name
       value: Verja-01 (2)
@@ -2616,6 +2637,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 501453028}
     m_Modifications:
+    - target: {fileID: 1181138644417381151, guid: 385eb7c92f33c2d4aaedfd246acab699, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5928547045694461018, guid: 385eb7c92f33c2d4aaedfd246acab699, type: 3}
       propertyPath: m_Name
       value: Verja-01 (3)
@@ -3289,6 +3314,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 501453028}
     m_Modifications:
+    - target: {fileID: 1181138644417381151, guid: 385eb7c92f33c2d4aaedfd246acab699, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5928547045694461018, guid: 385eb7c92f33c2d4aaedfd246acab699, type: 3}
       propertyPath: m_Name
       value: Verja-02
@@ -3493,6 +3522,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 501453028}
     m_Modifications:
+    - target: {fileID: 1181138644417381151, guid: 385eb7c92f33c2d4aaedfd246acab699, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5928547045694461018, guid: 385eb7c92f33c2d4aaedfd246acab699, type: 3}
       propertyPath: m_Name
       value: Verja-09 (2)
@@ -3974,6 +4007,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 501453028}
     m_Modifications:
+    - target: {fileID: 1181138644417381151, guid: 385eb7c92f33c2d4aaedfd246acab699, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5928547045694461018, guid: 385eb7c92f33c2d4aaedfd246acab699, type: 3}
       propertyPath: m_Name
       value: Verja-01 (6)
@@ -4360,7 +4397,7 @@ GameObject:
   m_Component:
   - component: {fileID: 229563665}
   m_Layer: 0
-  m_Name: "L\xE1pidas"
+  m_Name: Gravestones
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5018,6 +5055,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 501453028}
     m_Modifications:
+    - target: {fileID: 1181138644417381151, guid: 385eb7c92f33c2d4aaedfd246acab699, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5928547045694461018, guid: 385eb7c92f33c2d4aaedfd246acab699, type: 3}
       propertyPath: m_Name
       value: Verja-02 (5)
@@ -5722,6 +5763,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 501453028}
     m_Modifications:
+    - target: {fileID: 1181138644417381151, guid: 385eb7c92f33c2d4aaedfd246acab699, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5928547045694461018, guid: 385eb7c92f33c2d4aaedfd246acab699, type: 3}
       propertyPath: m_Name
       value: Verja-01 (5)
@@ -5798,7 +5843,7 @@ GameObject:
   m_Component:
   - component: {fileID: 313748739}
   m_Layer: 0
-  m_Name: Naturaleza
+  m_Name: Nature
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6092,7 +6137,7 @@ GameObject:
   m_Component:
   - component: {fileID: 332711141}
   m_Layer: 0
-  m_Name: Punto E
+  m_Name: WaypointA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6696,6 +6741,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 501453028}
     m_Modifications:
+    - target: {fileID: 1181138644417381151, guid: 385eb7c92f33c2d4aaedfd246acab699, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5928547045694461018, guid: 385eb7c92f33c2d4aaedfd246acab699, type: 3}
       propertyPath: m_Name
       value: Verja-03 (3)
@@ -7059,6 +7108,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 501453028}
     m_Modifications:
+    - target: {fileID: 1181138644417381151, guid: 385eb7c92f33c2d4aaedfd246acab699, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5928547045694461018, guid: 385eb7c92f33c2d4aaedfd246acab699, type: 3}
       propertyPath: m_Name
       value: Verja-06 (3)
@@ -7644,6 +7697,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 501453028}
     m_Modifications:
+    - target: {fileID: 1181138644417381151, guid: 385eb7c92f33c2d4aaedfd246acab699, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5928547045694461018, guid: 385eb7c92f33c2d4aaedfd246acab699, type: 3}
       propertyPath: m_Name
       value: Verja-03
@@ -7968,7 +8025,7 @@ GameObject:
   m_Component:
   - component: {fileID: 435985878}
   m_Layer: 0
-  m_Name: Tumbas
+  m_Name: Graves
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7988,7 +8045,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1665518908}
-  - {fileID: 555489860}
   - {fileID: 995397360}
   - {fileID: 1953489217}
   - {fileID: 833861038}
@@ -8307,6 +8363,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 4045318573261476256, guid: baa8bc5c8b87d76479bd7b2b90f7ce28, type: 3}
   m_PrefabInstance: {fileID: 448819205}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &450188376 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: f57fafc29b24f994eb47085a29ea5442, type: 3}
+  m_PrefabInstance: {fileID: 473792675}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &454510915 stripped
 Transform:
@@ -8628,13 +8689,38 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: f57fafc29b24f994eb47085a29ea5442, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 473792679}
   m_SourcePrefab: {fileID: 100100000, guid: f57fafc29b24f994eb47085a29ea5442, type: 3}
 --- !u!4 &473792676 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: f57fafc29b24f994eb47085a29ea5442, type: 3}
   m_PrefabInstance: {fileID: 473792675}
   m_PrefabAsset: {fileID: 0}
+--- !u!64 &473792679
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 450188376}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4308623969328866479, guid: f57fafc29b24f994eb47085a29ea5442, type: 3}
 --- !u!1001 &477098135
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8643,6 +8729,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 501453028}
     m_Modifications:
+    - target: {fileID: 1181138644417381151, guid: 385eb7c92f33c2d4aaedfd246acab699, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5928547045694461018, guid: 385eb7c92f33c2d4aaedfd246acab699, type: 3}
       propertyPath: m_Name
       value: Verja-08
@@ -9168,7 +9258,7 @@ GameObject:
   m_Component:
   - component: {fileID: 501453028}
   m_Layer: 0
-  m_Name: Verjas
+  m_Name: ExteriorFences
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9202,7 +9292,6 @@ Transform:
   - {fileID: 2146204344}
   - {fileID: 626941191}
   - {fileID: 1522829336}
-  - {fileID: 863255985}
   - {fileID: 598008821}
   - {fileID: 548391739}
   - {fileID: 1407994291}
@@ -9219,8 +9308,8 @@ Transform:
   - {fileID: 210952938}
   - {fileID: 258453816}
   - {fileID: 1038234446}
-  - {fileID: 1753743224}
   - {fileID: 613286046}
+  - {fileID: 1753743224}
   - {fileID: 371491429}
   - {fileID: 16427356}
   - {fileID: 1358141126}
@@ -9625,6 +9714,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 501453028}
     m_Modifications:
+    - target: {fileID: 1181138644417381151, guid: 385eb7c92f33c2d4aaedfd246acab699, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5928547045694461018, guid: 385eb7c92f33c2d4aaedfd246acab699, type: 3}
       propertyPath: m_Name
       value: Verja-01 (4)
@@ -9761,6 +9854,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 501453028}
     m_Modifications:
+    - target: {fileID: 1181138644417381151, guid: 385eb7c92f33c2d4aaedfd246acab699, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5928547045694461018, guid: 385eb7c92f33c2d4aaedfd246acab699, type: 3}
       propertyPath: m_Name
       value: Verja-07
@@ -10410,7 +10507,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 435985878}
+    m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 150268818396277460, guid: 96bf068480d9e29408bf79d403528a2c, type: 3}
       propertyPath: m_IsTrigger
@@ -10430,15 +10527,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 190034272050512462, guid: 96bf068480d9e29408bf79d403528a2c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -39.158703
+      value: -48.366123
       objectReference: {fileID: 0}
     - target: {fileID: 190034272050512462, guid: 96bf068480d9e29408bf79d403528a2c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.0299981
+      value: 0.98399806
       objectReference: {fileID: 0}
     - target: {fileID: 190034272050512462, guid: 96bf068480d9e29408bf79d403528a2c, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 31.59198
+      value: 34.075058
       objectReference: {fileID: 0}
     - target: {fileID: 190034272050512462, guid: 96bf068480d9e29408bf79d403528a2c, type: 3}
       propertyPath: m_LocalRotation.w
@@ -10450,7 +10547,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 190034272050512462, guid: 96bf068480d9e29408bf79d403528a2c, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0.0000016093252
       objectReference: {fileID: 0}
     - target: {fileID: 190034272050512462, guid: 96bf068480d9e29408bf79d403528a2c, type: 3}
       propertyPath: m_LocalRotation.z
@@ -10470,7 +10567,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 714088295541823732, guid: 96bf068480d9e29408bf79d403528a2c, type: 3}
       propertyPath: m_Name
-      value: Tumba cerrada
+      value: ClosedGrave
       objectReference: {fileID: 0}
     - target: {fileID: 714088295541823732, guid: 96bf068480d9e29408bf79d403528a2c, type: 3}
       propertyPath: m_IsActive
@@ -10487,11 +10584,6 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 812154387}
   m_SourcePrefab: {fileID: 100100000, guid: 96bf068480d9e29408bf79d403528a2c, type: 3}
---- !u!4 &555489860 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 190034272050512462, guid: 96bf068480d9e29408bf79d403528a2c, type: 3}
-  m_PrefabInstance: {fileID: 555489859}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &558407315
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11496,6 +11588,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 501453028}
     m_Modifications:
+    - target: {fileID: 1181138644417381151, guid: 385eb7c92f33c2d4aaedfd246acab699, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5928547045694461018, guid: 385eb7c92f33c2d4aaedfd246acab699, type: 3}
       propertyPath: m_Name
       value: Verja-06 (1)
@@ -11554,7 +11650,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 6416994552820731616, guid: 385eb7c92f33c2d4aaedfd246acab699, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 863255985}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 385eb7c92f33c2d4aaedfd246acab699, type: 3}
 --- !u!4 &598008821 stripped
@@ -11756,6 +11855,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 501453028}
     m_Modifications:
+    - target: {fileID: 1181138644417381151, guid: 385eb7c92f33c2d4aaedfd246acab699, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5928547045694461018, guid: 385eb7c92f33c2d4aaedfd246acab699, type: 3}
       propertyPath: m_Name
       value: Verja-03 (2)
@@ -12091,6 +12194,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 501453028}
     m_Modifications:
+    - target: {fileID: 1181138644417381151, guid: 385eb7c92f33c2d4aaedfd246acab699, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5928547045694461018, guid: 385eb7c92f33c2d4aaedfd246acab699, type: 3}
       propertyPath: m_Name
       value: Verja-05
@@ -12931,6 +13038,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 501453028}
     m_Modifications:
+    - target: {fileID: 1181138644417381151, guid: 385eb7c92f33c2d4aaedfd246acab699, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5928547045694461018, guid: 385eb7c92f33c2d4aaedfd246acab699, type: 3}
       propertyPath: m_Name
       value: Verja-01 (3)
@@ -13847,6 +13958,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4045318573261476256, guid: baa8bc5c8b87d76479bd7b2b90f7ce28, type: 3}
   m_PrefabInstance: {fileID: 718979489}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &721985415 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: f57fafc29b24f994eb47085a29ea5442, type: 3}
+  m_PrefabInstance: {fileID: 1467636466}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &724046650
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13909,7 +14025,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 10747d921817c6c4d9ae3b36530556a7, type: 3}
       propertyPath: m_Name
-      value: Siguiente nivel (tumba abierta)
+      value: OpenGrave
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 10747d921817c6c4d9ae3b36530556a7, type: 3}
       propertyPath: m_IsActive
@@ -14307,6 +14423,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 501453028}
     m_Modifications:
+    - target: {fileID: 350661559883978959, guid: 79389fcc31cda1e48ab1167dd58cdb70, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8373222728565928084, guid: 79389fcc31cda1e48ab1167dd58cdb70, type: 3}
       propertyPath: m_LocalScale.x
       value: 5
@@ -14653,7 +14773,7 @@ GameObject:
   m_Component:
   - component: {fileID: 756938600}
   m_Layer: 0
-  m_Name: Suelo
+  m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16329,7 +16449,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 501453028}
+    m_TransformParent: {fileID: 598008821}
     m_Modifications:
     - target: {fileID: 5928547045694461018, guid: 385eb7c92f33c2d4aaedfd246acab699, type: 3}
       propertyPath: m_Name
@@ -16337,19 +16457,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6416994552820731616, guid: 385eb7c92f33c2d4aaedfd246acab699, type: 3}
       propertyPath: m_LocalScale.x
-      value: 5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6416994552820731616, guid: 385eb7c92f33c2d4aaedfd246acab699, type: 3}
       propertyPath: m_LocalScale.y
-      value: 5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6416994552820731616, guid: 385eb7c92f33c2d4aaedfd246acab699, type: 3}
       propertyPath: m_LocalScale.z
-      value: 5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6416994552820731616, guid: 385eb7c92f33c2d4aaedfd246acab699, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 31.85
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6416994552820731616, guid: 385eb7c92f33c2d4aaedfd246acab699, type: 3}
       propertyPath: m_LocalPosition.y
@@ -16357,7 +16477,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6416994552820731616, guid: 385eb7c92f33c2d4aaedfd246acab699, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.2351112
+      value: 9.609023
       objectReference: {fileID: 0}
     - target: {fileID: 6416994552820731616, guid: 385eb7c92f33c2d4aaedfd246acab699, type: 3}
       propertyPath: m_LocalRotation.w
@@ -16728,6 +16848,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 501453028}
     m_Modifications:
+    - target: {fileID: 1181138644417381151, guid: 385eb7c92f33c2d4aaedfd246acab699, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5928547045694461018, guid: 385eb7c92f33c2d4aaedfd246acab699, type: 3}
       propertyPath: m_Name
       value: Verja-02 (1)
@@ -17789,6 +17913,40 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4045318573261476256, guid: baa8bc5c8b87d76479bd7b2b90f7ce28, type: 3}
   m_PrefabInstance: {fileID: 911110060}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &911749610
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 911749611}
+  m_Layer: 0
+  m_Name: Skeletons
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &911749611
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 911749610}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -43.97708, y: 1.03, z: 43.99429}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1579185835}
+  - {fileID: 1163089430}
+  - {fileID: 2071031494}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &914985056
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18733,7 +18891,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 911749611}
     m_Modifications:
     - target: {fileID: 3772917067163280744, guid: 8446c3f3a1240af4499ac89b51e3f3ea, type: 3}
       propertyPath: m_Size.z
@@ -18761,15 +18919,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7231732794414052688, guid: 8446c3f3a1240af4499ac89b51e3f3ea, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -18.136318
+      value: 25.840763
       objectReference: {fileID: 0}
     - target: {fileID: 7231732794414052688, guid: 8446c3f3a1240af4499ac89b51e3f3ea, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.9289999
+      value: -0.10100007
       objectReference: {fileID: 0}
     - target: {fileID: 7231732794414052688, guid: 8446c3f3a1240af4499ac89b51e3f3ea, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 52.074932
+      value: 8.080643
       objectReference: {fileID: 0}
     - target: {fileID: 7231732794414052688, guid: 8446c3f3a1240af4499ac89b51e3f3ea, type: 3}
       propertyPath: m_LocalRotation.w
@@ -18801,7 +18959,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8005031814570176490, guid: 8446c3f3a1240af4499ac89b51e3f3ea, type: 3}
       propertyPath: m_Name
-      value: Esqueleto 03
+      value: Skeleton-01
       objectReference: {fileID: 0}
     - target: {fileID: 8005031814570176490, guid: 8446c3f3a1240af4499ac89b51e3f3ea, type: 3}
       propertyPath: m_TagString
@@ -20049,6 +20207,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 501453028}
     m_Modifications:
+    - target: {fileID: 1181138644417381151, guid: 385eb7c92f33c2d4aaedfd246acab699, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5928547045694461018, guid: 385eb7c92f33c2d4aaedfd246acab699, type: 3}
       propertyPath: m_Name
       value: Verja-02 (4)
@@ -21787,7 +21949,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1138247471}
   m_Layer: 0
-  m_Name: Punto A
+  m_Name: WaypointC
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -21870,7 +22032,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5336886387222029051, guid: f3de4d96b9cdccd4fb317d4ad981eb17, type: 3}
       propertyPath: m_Name
-      value: Banco
+      value: Bench-01
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -22014,6 +22176,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 501453028}
     m_Modifications:
+    - target: {fileID: 350661559883978959, guid: 79389fcc31cda1e48ab1167dd58cdb70, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8373222728565928084, guid: 79389fcc31cda1e48ab1167dd58cdb70, type: 3}
       propertyPath: m_LocalScale.x
       value: 5
@@ -22090,7 +22256,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1150049701}
   m_Layer: 0
-  m_Name: Punto B
+  m_Name: WaypointD
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -22282,6 +22448,11 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 0
   gameOverSceneName: GameOver
+--- !u!4 &1163089430 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7231732794414052688, guid: 8446c3f3a1240af4499ac89b51e3f3ea, type: 3}
+  m_PrefabInstance: {fileID: 1868370394}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1168053631
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22476,6 +22647,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 501453028}
     m_Modifications:
+    - target: {fileID: 1181138644417381151, guid: 385eb7c92f33c2d4aaedfd246acab699, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5928547045694461018, guid: 385eb7c92f33c2d4aaedfd246acab699, type: 3}
       propertyPath: m_Name
       value: Verja-04
@@ -22738,7 +22913,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5336886387222029051, guid: f3de4d96b9cdccd4fb317d4ad981eb17, type: 3}
       propertyPath: m_Name
-      value: Banco (1)
+      value: Bench-02
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -23010,13 +23185,38 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: f57fafc29b24f994eb47085a29ea5442, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1197433960}
   m_SourcePrefab: {fileID: 100100000, guid: f57fafc29b24f994eb47085a29ea5442, type: 3}
 --- !u!4 &1197433957 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: f57fafc29b24f994eb47085a29ea5442, type: 3}
   m_PrefabInstance: {fileID: 1197433956}
   m_PrefabAsset: {fileID: 0}
+--- !u!64 &1197433960
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 77894080}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4308623969328866479, guid: f57fafc29b24f994eb47085a29ea5442, type: 3}
 --- !u!1001 &1199482578
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23718,6 +23918,7 @@ GameObject:
   - component: {fileID: 1233740438}
   - component: {fileID: 1233740437}
   - component: {fileID: 1233740440}
+  - component: {fileID: 1233740441}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -23766,7 +23967,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 60
+  field of view: 60.000004
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -23792,8 +23993,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1233740436}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.000000044618478, y: -0.707107, z: 0.70710665, w: -0.000000044703484}
-  m_LocalPosition: {x: -49.089985, y: 45.227398, z: 32.700592}
+  m_LocalRotation: {x: -0.004522883, y: 0.8894276, z: -0.456969, w: -0.008805077}
+  m_LocalPosition: {x: -51.4, y: 57.5, z: 61.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -23843,6 +24044,38 @@ MonoBehaviour:
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
   m_Version: 2
+--- !u!114 &1233740441
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1233740436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72ece51f2901e7445ab60da3685d6b5f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.Cinemachine::Unity.Cinemachine.CinemachineBrain
+  ShowDebugText: 0
+  ShowCameraFrustum: 1
+  IgnoreTimeScale: 0
+  WorldUpOverride: {fileID: 0}
+  ChannelMask: -1
+  UpdateMethod: 2
+  BlendUpdateMethod: 1
+  LensModeOverride:
+    Enabled: 0
+    DefaultMode: 2
+  DefaultBlend:
+    Style: 1
+    Time: 2
+    CustomCurve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+  CustomBlends: {fileID: 0}
 --- !u!1001 &1236112396
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23851,6 +24084,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 501453028}
     m_Modifications:
+    - target: {fileID: 1181138644417381151, guid: 385eb7c92f33c2d4aaedfd246acab699, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5928547045694461018, guid: 385eb7c92f33c2d4aaedfd246acab699, type: 3}
       propertyPath: m_Name
       value: Verja-08 (1)
@@ -24315,6 +24552,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 501453028}
     m_Modifications:
+    - target: {fileID: 1181138644417381151, guid: 385eb7c92f33c2d4aaedfd246acab699, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5928547045694461018, guid: 385eb7c92f33c2d4aaedfd246acab699, type: 3}
       propertyPath: m_Name
       value: Verja-02 (2)
@@ -25648,6 +25889,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 501453028}
     m_Modifications:
+    - target: {fileID: 1181138644417381151, guid: 385eb7c92f33c2d4aaedfd246acab699, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5928547045694461018, guid: 385eb7c92f33c2d4aaedfd246acab699, type: 3}
       propertyPath: m_Name
       value: Verja-03 (1)
@@ -26495,6 +26740,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 501453028}
     m_Modifications:
+    - target: {fileID: 1181138644417381151, guid: 385eb7c92f33c2d4aaedfd246acab699, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5928547045694461018, guid: 385eb7c92f33c2d4aaedfd246acab699, type: 3}
       propertyPath: m_Name
       value: Verja-09
@@ -26631,6 +26880,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 501453028}
     m_Modifications:
+    - target: {fileID: 1181138644417381151, guid: 385eb7c92f33c2d4aaedfd246acab699, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5928547045694461018, guid: 385eb7c92f33c2d4aaedfd246acab699, type: 3}
       propertyPath: m_Name
       value: Verja-04 (3)
@@ -27019,7 +27272,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1372050492}
   m_Layer: 0
-  m_Name: Punto C
+  m_Name: WaypointE
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27869,6 +28122,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 501453028}
     m_Modifications:
+    - target: {fileID: 1181138644417381151, guid: 385eb7c92f33c2d4aaedfd246acab699, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5928547045694461018, guid: 385eb7c92f33c2d4aaedfd246acab699, type: 3}
       propertyPath: m_Name
       value: Verja-01 (1)
@@ -27943,6 +28200,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 501453028}
     m_Modifications:
+    - target: {fileID: 1181138644417381151, guid: 385eb7c92f33c2d4aaedfd246acab699, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5928547045694461018, guid: 385eb7c92f33c2d4aaedfd246acab699, type: 3}
       propertyPath: m_Name
       value: Verja-07 (1)
@@ -28329,7 +28590,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1413986011}
   m_Layer: 0
-  m_Name: Bancos
+  m_Name: Benches
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -29350,13 +29611,38 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: f57fafc29b24f994eb47085a29ea5442, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1467636470}
   m_SourcePrefab: {fileID: 100100000, guid: f57fafc29b24f994eb47085a29ea5442, type: 3}
 --- !u!4 &1467636467 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: f57fafc29b24f994eb47085a29ea5442, type: 3}
   m_PrefabInstance: {fileID: 1467636466}
   m_PrefabAsset: {fileID: 0}
+--- !u!64 &1467636470
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 721985415}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4308623969328866479, guid: f57fafc29b24f994eb47085a29ea5442, type: 3}
 --- !u!1001 &1469416402
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -30388,6 +30674,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 501453028}
     m_Modifications:
+    - target: {fileID: 1181138644417381151, guid: 385eb7c92f33c2d4aaedfd246acab699, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5928547045694461018, guid: 385eb7c92f33c2d4aaedfd246acab699, type: 3}
       propertyPath: m_Name
       value: Verja-05 (1)
@@ -30524,6 +30814,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 501453028}
     m_Modifications:
+    - target: {fileID: 1181138644417381151, guid: 385eb7c92f33c2d4aaedfd246acab699, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5928547045694461018, guid: 385eb7c92f33c2d4aaedfd246acab699, type: 3}
       propertyPath: m_Name
       value: Verja-05 (2)
@@ -31099,6 +31393,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 501453028}
     m_Modifications:
+    - target: {fileID: 1181138644417381151, guid: 385eb7c92f33c2d4aaedfd246acab699, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5928547045694461018, guid: 385eb7c92f33c2d4aaedfd246acab699, type: 3}
       propertyPath: m_Name
       value: Verja-01
@@ -31388,6 +31686,11 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 0
   gameOverSceneName: GameOver
+--- !u!4 &1579185835 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7231732794414052688, guid: 8446c3f3a1240af4499ac89b51e3f3ea, type: 3}
+  m_PrefabInstance: {fileID: 960756321}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1580089036 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4461678248236070368, guid: 622662fa854c21c44ae580554f39f174, type: 3}
@@ -34378,7 +34681,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1717564258}
   m_Layer: 0
-  m_Name: Punto D
+  m_Name: WaypointF
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -35250,7 +35553,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1753693036}
   m_Layer: 0
-  m_Name: Velas
+  m_Name: Candles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -35389,7 +35692,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1757903895}
   m_Layer: 0
-  m_Name: Esqueletos Waypoints
+  m_Name: SkeletonWaypoints
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -35408,12 +35711,12 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 332711141}
+  - {fileID: 2025848301}
   - {fileID: 1138247471}
   - {fileID: 1150049701}
   - {fileID: 1372050492}
   - {fileID: 1717564258}
-  - {fileID: 332711141}
-  - {fileID: 2025848301}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: -720, z: 0}
 --- !u!1001 &1766354264
@@ -37263,7 +37566,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 911749611}
     m_Modifications:
     - target: {fileID: 3772917067163280744, guid: 8446c3f3a1240af4499ac89b51e3f3ea, type: 3}
       propertyPath: m_Size.z
@@ -37291,15 +37594,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7231732794414052688, guid: 8446c3f3a1240af4499ac89b51e3f3ea, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -27.303003
+      value: 16.674078
       objectReference: {fileID: 0}
     - target: {fileID: 7231732794414052688, guid: 8446c3f3a1240af4499ac89b51e3f3ea, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.9289999
+      value: -0.10100007
       objectReference: {fileID: 0}
     - target: {fileID: 7231732794414052688, guid: 8446c3f3a1240af4499ac89b51e3f3ea, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 38.874912
+      value: -5.119377
       objectReference: {fileID: 0}
     - target: {fileID: 7231732794414052688, guid: 8446c3f3a1240af4499ac89b51e3f3ea, type: 3}
       propertyPath: m_LocalRotation.w
@@ -37331,7 +37634,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8005031814570176490, guid: 8446c3f3a1240af4499ac89b51e3f3ea, type: 3}
       propertyPath: m_Name
-      value: Esqueleto 01
+      value: Skeleton-02
       objectReference: {fileID: 0}
     - target: {fileID: 8005031814570176490, guid: 8446c3f3a1240af4499ac89b51e3f3ea, type: 3}
       propertyPath: m_TagString
@@ -38213,7 +38516,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5336886387222029051, guid: f3de4d96b9cdccd4fb317d4ad981eb17, type: 3}
       propertyPath: m_Name
-      value: Banco (2)
+      value: Bench-03
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -41047,7 +41350,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2025848301}
   m_Layer: 0
-  m_Name: Punto F
+  m_Name: WaypointB
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -41730,6 +42033,11 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 0
   gameOverSceneName: GameOver
+--- !u!4 &2071031494 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7231732794414052688, guid: 8446c3f3a1240af4499ac89b51e3f3ea, type: 3}
+  m_PrefabInstance: {fileID: 2095814563}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2074580098
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -42354,7 +42662,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 911749611}
     m_Modifications:
     - target: {fileID: 3772917067163280744, guid: 8446c3f3a1240af4499ac89b51e3f3ea, type: 3}
       propertyPath: m_Size.z
@@ -42382,15 +42690,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7231732794414052688, guid: 8446c3f3a1240af4499ac89b51e3f3ea, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -72.84627
+      value: -28.869186
       objectReference: {fileID: 0}
     - target: {fileID: 7231732794414052688, guid: 8446c3f3a1240af4499ac89b51e3f3ea, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.9289999
+      value: -0.10100007
       objectReference: {fileID: 0}
     - target: {fileID: 7231732794414052688, guid: 8446c3f3a1240af4499ac89b51e3f3ea, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 25.514835
+      value: -18.479454
       objectReference: {fileID: 0}
     - target: {fileID: 7231732794414052688, guid: 8446c3f3a1240af4499ac89b51e3f3ea, type: 3}
       propertyPath: m_LocalRotation.w
@@ -42422,7 +42730,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8005031814570176490, guid: 8446c3f3a1240af4499ac89b51e3f3ea, type: 3}
       propertyPath: m_Name
-      value: Esqueleto 02
+      value: Skeleton-03
       objectReference: {fileID: 0}
     - target: {fileID: 8005031814570176490, guid: 8446c3f3a1240af4499ac89b51e3f3ea, type: 3}
       propertyPath: m_TagString
@@ -43398,6 +43706,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 501453028}
     m_Modifications:
+    - target: {fileID: 1181138644417381151, guid: 385eb7c92f33c2d4aaedfd246acab699, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5928547045694461018, guid: 385eb7c92f33c2d4aaedfd246acab699, type: 3}
       propertyPath: m_Name
       value: Verja-09 (1)
@@ -43472,6 +43784,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 501453028}
     m_Modifications:
+    - target: {fileID: 1181138644417381151, guid: 385eb7c92f33c2d4aaedfd246acab699, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5928547045694461018, guid: 385eb7c92f33c2d4aaedfd246acab699, type: 3}
       propertyPath: m_Name
       value: Verja-04 (1)
@@ -44009,22 +44325,21 @@ SceneRoots:
   m_Roots:
   - {fileID: 1233740439}
   - {fileID: 1795742814}
-  - {fileID: 1413986011}
+  - {fileID: 1226121883}
+  - {fileID: 1258777275}
+  - {fileID: 2029391345}
+  - {fileID: 911749611}
+  - {fileID: 1757903895}
+  - {fileID: 202488737}
+  - {fileID: 555489859}
+  - {fileID: 724046650}
   - {fileID: 313748739}
+  - {fileID: 1413986011}
   - {fileID: 20953274}
   - {fileID: 104876037}
-  - {fileID: 1868370394}
-  - {fileID: 2095814563}
-  - {fileID: 960756321}
-  - {fileID: 1757903895}
   - {fileID: 229563665}
   - {fileID: 435985878}
-  - {fileID: 724046650}
   - {fileID: 1753693036}
-  - {fileID: 202488737}
-  - {fileID: 2029391345}
   - {fileID: 45881215}
   - {fileID: 501453028}
   - {fileID: 756938600}
-  - {fileID: 1226121883}
-  - {fileID: 1258777275}
