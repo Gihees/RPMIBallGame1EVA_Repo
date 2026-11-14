@@ -14,6 +14,7 @@ public class PlayerController : MonoBehaviour
     [Header("Jump parameters")]
     public float jumpForce = 6;
     public bool isGrounded = true;
+    public AudioSource jumpAudio;
 
     [Header("Respawn Sistem")]
     public float fallLimit = -10;
@@ -67,6 +68,11 @@ public class PlayerController : MonoBehaviour
     void Jump()
     {
         playerRb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
+
+        if (jumpAudio != null)
+        {
+            jumpAudio.Play();
+        }
     }
 
     void Respawn()
